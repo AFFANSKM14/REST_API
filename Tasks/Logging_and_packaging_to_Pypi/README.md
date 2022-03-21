@@ -13,13 +13,32 @@ pip install Museum_API_conversions
 
 ## Example
 
-from Museum_API_conversions import MuseumAPI
+import Museum_API_conversions
 
-api = MuseumAPI(Museum_API_url)
+api = Museum_API_conversions.MuseumAPI(Museum_API_url)
 
 df = api.api_to_dataframe(1, 5)
 
 The above step is must in order to convert dataframe into html, csv and xml
+
+csv_file = 'Museum_API_5to8.csv'
+
+html_file = 'Museum_API_5to8.html'
+
+xml_file = 'Museum_API_5to8.xml'
+
+pdf_file = 'Museum_API_5to8.pdf'
+
+api.dataframe_to_csv(df, csv_file)
+
+
+api.dataframe_to_html(df, html_file)
+
+
+api.html_to_pdf(html_file, pdf_file)
+
+
+api.dataframe_to_xml(df, xml_file)
 
 ## parameters
 
