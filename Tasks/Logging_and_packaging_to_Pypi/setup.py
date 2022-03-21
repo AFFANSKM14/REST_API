@@ -5,7 +5,7 @@ with open("Readme.md", 'r') as fh:
 
 setuptools.setup(
     name='Museum_API_conversions',
-    version='0.0.5',
+    version='0.0.6',
     description='Museum_API objects which converts in json form and then json to pdf,html,xml,csv formats',
     author='Affan',
     long_description=long_description,
